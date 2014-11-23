@@ -20,11 +20,11 @@ app.import('vendor/kinvey.js', {
   }
 });
 
-app.import('bower_components/ionicons/fonts/ionicons.eot');
-app.import('bower_components/ionicons/fonts/ionicons.svg');
-app.import('bower_components/ionicons/fonts/ionicons.ttf');
-app.import('bower_components/ionicons/fonts/ionicons.woff');
 
+app.import('bower_components/ionicons/fonts/ionicons.eot', {destDir: 'fonts'});
+app.import('bower_components/ionicons/fonts/ionicons.svg', {destDir: 'fonts'});
+app.import('bower_components/ionicons/fonts/ionicons.ttf', {destDir: 'fonts'});
+app.import('bower_components/ionicons/fonts/ionicons.woff', {destDir: 'fonts'});
 
 
 // Use `app.import` to add additional libraries to the generated
