@@ -12,11 +12,19 @@ var app = new EmberApp({
   }
 });
 
+app.import('vendor/kinvey.js', {
+  exports: {
+    'kinvey': [
+      'default'
+    ]
+  }
+});
 
 app.import('bower_components/ionicons/fonts/ionicons.eot');
 app.import('bower_components/ionicons/fonts/ionicons.svg');
 app.import('bower_components/ionicons/fonts/ionicons.ttf');
 app.import('bower_components/ionicons/fonts/ionicons.woff');
+
 
 
 // Use `app.import` to add additional libraries to the generated
