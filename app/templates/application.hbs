@@ -1,0 +1,18 @@
+<div class="topcoat-navigation-bar">
+  <div class="topcoat-navigation-bar__item center full">
+    <h1 class="topcoat-navigation-bar__title">
+      <i class="icon ion-navicon-round"></i>
+      Header
+    </h1>
+  </div>
+</div>
+
+{{#if session.isAuthenticated}}
+  <div class="pull-right">
+    <div class="btn btn-link" {{action 'invalidateSession'}}>Save for later</div>
+    <div class="btn btn-link" {{action 'invalidateSession'}}>Logout</div>
+  </div>
+{{/if}}
+
+
+{{outlet}}
